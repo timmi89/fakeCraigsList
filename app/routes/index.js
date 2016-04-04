@@ -2,12 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('listing');
-  },
+  return Ember.RSVP.hash({
+    categories: this.store.findAll('category'),
+    listings: this.store.findAll('listing')
+  });
+},
   actions: {
-    save3(params) {
-      var newListing = this.store.createRecord('listing', params);
-      newListing.save();
+    saveCategory(params) {
+      var newCategory = this.store.createRecord('category', params);
+      console.log(params);
+      newCategory.save();
       this.transitionTo('index');
     },
   }

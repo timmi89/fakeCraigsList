@@ -10,10 +10,11 @@ export default Ember.Component.extend({
       var params = {
         user: this.get('user'),
         title: this.get('title'),
+        category: this.get('category'),
         date: this.get('date'),
         image: this.get('image'),
         description: this.get('description'),
-        cost: this.get('cost'),
+        cost: parseInt(this.get('cost')),
       };
       this.set('updateListingForm', false);
       this.sendAction('update', listing, params);

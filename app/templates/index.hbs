@@ -4,14 +4,24 @@
   Find stuff to buy/sell or whatever.
 </p>
 
-<ul>
+<!-- <ul>
   {{#each model as |listing|}}
     {{listing-tile listing=listing update="update" destroyListing="destroyListing"}}
   {{/each}}
+</ul> -->
+
+<h2> Categories </h2>
+
+<ul>
+  {{#each model.categories as |category|}}
+    <li>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+  {{/each}}
 </ul>
+<!-- 
+{{new-category saveCategory="saveCategory"}} -->
 
-{{new-listing save2="save3"}}
+<!-- {{new-listing save2="save3"}} -->
 
-{{#link-to 'about'}}About{{/link-to}}
+<!-- {{#link-to 'about'}}About{{/link-to}} -->
 
 <!-- {{outlet}} -->

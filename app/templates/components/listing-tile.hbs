@@ -1,4 +1,4 @@
-    <li>{{#link-to 'listing' listing.id}}{{listing.title}} for ${{listing.cost}} by {{listing.user}} {{/link-to}}
-          {{update-listing listing=listing update="update"}}
+    <li>{{#link-to 'listing' listing.id}}{{listing.category.name}} includes a listing for {{listing.title}} for ${{listing.cost}} by {{listing.user}} {{/link-to}}
+          <!-- {{update-listing listing=listing update="update"}} -->
       <button {{action 'delete' listing}}>Delete</button>
     </li>
