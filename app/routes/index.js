@@ -5,6 +5,11 @@ export default Ember.Route.extend({
     return this.store.findAll('listing');
   },
   actions: {
+    save3(params) {
+      var newListing = this.store.createRecord('listing', params);
+      newListing.save();
+      this.transitionTo('index');
+    },
     destroyListing(listing) {
       listing.destroyRecord();
       this.transitionTo('index');

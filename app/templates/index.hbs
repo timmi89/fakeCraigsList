@@ -7,9 +7,10 @@
 <ul>
   {{#each model as |listing|}}
     {{listing-tile listing=listing destroyListing="destroyListing"}}
-
   {{/each}}
 </ul>
+
+{{new-listing save2="save3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 
