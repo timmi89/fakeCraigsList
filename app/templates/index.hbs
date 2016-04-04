@@ -6,7 +6,7 @@
 
 <ul>
   {{#each model as |listing|}}
-    {{listing-tile listing=listing destroyListing="destroyListing"}}
+    {{listing-tile listing=listing update="update" destroyListing="destroyListing"}}
   {{/each}}
 </ul>
 

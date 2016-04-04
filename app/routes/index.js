@@ -10,9 +10,5 @@ export default Ember.Route.extend({
       newListing.save();
       this.transitionTo('index');
     },
-    destroyListing(listing) {
-      listing.destroyRecord();
-      this.transitionTo('index');
-    }
   }
 });
