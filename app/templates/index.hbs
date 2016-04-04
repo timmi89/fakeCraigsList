@@ -1,0 +1,16 @@
+<h1>Welcome to Fake Craigslist!</h1>
+
+<p>
+  Find stuff to buy/sell or whatever.
+</p>
+
+<ul>
+  {{#each model as |listing|}}
+    {{listing-tile listing=listing destroyListing="destroyListing"}}
+
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+
+<!-- {{outlet}} -->

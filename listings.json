@@ -1,0 +1,25 @@
+{ "listings": [{"id": 1,
+  "user": "MyName",
+  "title": "Table for Sale",
+  "date": "April 4",
+  "description": "This is a nice table that you will love eating on",
+  "cost": "100",
+  "image": "http://images.clipartpanda.com/kitchen-table-clip-art-classroom-table-cliparttable-clipart---viewing-gallery-jpn5qeis.jpg"
+  }, {
+  "id": 2,
+  "user": "YourName",
+  "title": "Chairs for Sale",
+  "date": "April 4",
+  "description": "Chairs for sale. Sitting is fun.",
+  "cost": "80",
+  "image":"http://ecx.images-amazon.com/images/I/51v64zgcHwL.jpg"
+  }, {
+  "id": 3,
+  "user": "Bob Smith",
+  "title": "TV for sale",
+  "date": "April 3",
+  "description": "Buy this tv so you can watch your favorite shows",
+  "cost": "160",
+  "image":"http://pisces.bbystatic.com/image2/BestBuy_US/en_US/images/abn/2015/tvv/fo/nav/tv-ht-fo1.jpg;canvasHeight=288;canvasWidth=520"
+  }]
+}
