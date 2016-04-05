@@ -19,7 +19,7 @@ export default Ember.Component.extend({
         category: this.get('category'),
         date: moment().format('MM/DD/YYYY hh:mm:ss a'),
         description: this.get('description'),
-        cost: this.get('cost'),
+        cost: parseInt(this.get('cost')),
         image: this.get('image')
       };
       console.log(params);
