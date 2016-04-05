@@ -13,7 +13,9 @@ export default Ember.Route.extend({
     newListing.save().then(function() {
       return category.save();
     });
-    this.transitionTo('category', params.city);
+    console.log(params);
+      this.transitionTo('category', params.category);
+    // this.transitionTo('index');
     }
   }
 });

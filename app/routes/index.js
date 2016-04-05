@@ -12,6 +12,7 @@ export default Ember.Route.extend({
       var newCategory = this.store.createRecord('category', params);
       console.log(params);
       newCategory.save();
+      //fix this so that you go to the category instead of index after adding a new categoru
       this.transitionTo('index');
     },
   }

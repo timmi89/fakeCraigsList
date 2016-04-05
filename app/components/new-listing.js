@@ -17,6 +17,7 @@ export default Ember.Component.extend({
         cost: this.get('cost'),
         image: this.get('image')
       };
+      console.log(params);
       this.set('addNewListing', false);
       this.sendAction('save2', params);
     }
