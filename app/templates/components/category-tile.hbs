@@ -1,1 +1,11 @@
-<li>{{category.listing}} </li>
+<ul>
+  <li>{{category.listing}} </li>
+</ul>
+
+<ul>
+  {{#each sortedListings as |listing|}}
+    {{listing-tile listing=listing}}
+  {{/each}}
+</ul>
+
+<!-- <button {{action 'delete' listing}}>Delete Listing</button> -->
