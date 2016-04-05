@@ -2,4 +2,9 @@
 
 {{new-listing save2="save3" category=model}}
 
+EACH THING HERE
+
+{{#each model.listings as |listing|}}
+{{listing.title}}
+{{/each}}
 {{category-tile category=model destroyCategory="destroyCategory"}}

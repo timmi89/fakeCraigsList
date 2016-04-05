@@ -9,12 +9,11 @@ export default Ember.Route.extend({
 
     var newListing = this.store.createRecord('listing', params);
     var category = params.category;
-    category.get('listing').addObject(newListing);
+    category.get('listings').addObject(newListing);
     newListing.save().then(function() {
       return category.save();
     });
     this.transitionTo('category', params.city);
+    }
   }
-}
-
 });
